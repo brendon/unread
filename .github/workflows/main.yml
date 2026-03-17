@@ -13,8 +13,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        ruby: ['3.2', '3.3', '3.4', '3.5']
-        rails: ['7.1', '7.2', '8.0']
+        ruby: ['3.2', '3.3', '3.4', '4.0']
+        rails: ['7.2', '8.0', '8.1']
 
     name: SQLite / Ruby ${{ matrix.ruby }} / Rails ${{ matrix.rails }}
 
@@ -58,8 +58,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        ruby: ['3.2', '3.3', '3.4', '3.5']
-        rails: ['7.1', '7.2', '8.0']
+        ruby: ['3.2', '3.3', '3.4', '4.0']
+        rails: ['7.2', '8.0', '8.1']
 
     name: MySQL / Ruby ${{ matrix.ruby }} / Rails ${{ matrix.rails }}
 
@@ -107,8 +107,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        ruby: ['3.2', '3.3', '3.4', '3.5']
-        rails: ['7.1', '7.2', '8.0']
+        ruby: ['3.2', '3.3', '3.4', '4.0']
+        rails: ['7.2', '8.0', '8.1']
 
     name: PostgreSQL / Ruby ${{ matrix.ruby }} / Rails ${{ matrix.rails }}
 
